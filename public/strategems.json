@@ -1,0 +1,246 @@
+[
+    {
+        "title": "Reinforce",
+        "keys": "⬆️⬇️⬅️➡️"
+    },
+    {
+        "title": "SOS Beacon",
+        "keys": "⬆️⬇️➡️⬆️"
+    },
+    {
+        "title": "Resupply",
+        "keys": "⬇️⬇️⬆️➡️"
+    },
+    {
+        "title": "Eagle Rearm",
+        "keys": "⬆️⬆️⬅️⬆️➡️"
+    },
+    {
+        "title": "SEAF Artillery",
+        "keys": "⬅️⬆️⬆️⬇️"
+    },
+    {
+        "title": "SSSD Delivery",
+        "keys": "⬇️⬇️⬇️⬆️⬆️"
+    },
+    {
+        "title": "Upload Data",
+        "keys": "⬅️➡️⬆️⬆️⬆️"
+    },
+    {
+        "title": "Hellbomb",
+        "keys": "⬆️⬇️⬅️⬇️⬆️➡️⬇️⬆️"
+    },
+    {
+        "title": "Seismic Probe",
+        "keys": "⬆️⬆️⬅️➡️⬇️⬇️"
+    },
+    {
+        "title": "Prospecting Drill",
+        "keys": "⬇️⬇️⬅️➡️⬇️⬇️"
+    },
+    {
+        "title": "Super Earth Flag",
+        "keys": "⬇️⬆️⬇️⬆️"
+    },
+    {
+        "title": "Machine Gun (level 1)",
+        "keys": "⬇️⬅️⬇️⬆️➡️"
+    },
+    {
+        "title": "Anti-Material Rifle (level 2)",
+        "keys": "⬇️⬅️➡️⬆️⬇️"
+    },
+    {
+        "title": "Stalwart (level 2)",
+        "keys": "⬇️⬅️⬇️⬆️⬆️⬅️"
+    },
+    {
+        "title": "Expendable Anti-Tank (level 3)",
+        "keys": "⬇️⬇️⬅️⬆️➡️"
+    },
+    {
+        "title": "Recoiled Rifle (level 5)",
+        "keys": "⬇️⬅️➡️➡️⬅️"
+    },
+    {
+        "title": "Flamethrower (level 10)",
+        "keys": "⬇️⬅️⬆️⬇️⬆️"
+    },
+    {
+        "title": "Autocannon (level 10)",
+        "keys": "⬇️⬅️⬇️⬆️⬆️➡️"
+    },
+    {
+        "title": "Heavy Machine Gun (level 12)",
+        "keys": "⬇️⬅️⬆️⬇️⬇️"
+    },
+    {
+        "title": "Railgun (level 20)",
+        "keys": "⬇️➡️⬅️⬇️⬆️⬅️➡️"
+    },
+    {
+        "title": "Spear (level 20)",
+        "keys": "⬇️⬇️⬆️⬇️⬇️"
+    },
+    {
+        "title": "Orbital Gatling Barrage (level 2)",
+        "keys": "➡️⬇️⬅️⬆️⬆️"
+    },
+    {
+        "title": "Orbital Airburst Strike (level 5)",
+        "keys": "➡️➡️➡️"
+    },
+    {
+        "title": "Orbital 120MM HE Barrage (level 5)",
+        "keys": "➡️⬇️⬅️➡️⬇️"
+    },
+    {
+        "title": "Orbital 380MM HE Barrage (level 8)",
+        "keys": "➡️⬇️⬆️⬆️⬅️⬇️⬇️"
+    },
+    {
+        "title": "Orbital Walking Barrage (level 10)",
+        "keys": "➡️➡️⬇️⬅️➡️⬇️"
+    },
+    {
+        "title": "Orbital Lasers (level 15)",
+        "keys": "➡️⬇️⬆️➡️⬇️"
+    },
+    {
+        "title": "Orbital Railcannon Strike (level 20)",
+        "keys": "➡️⬆️⬇️⬇️➡️"
+    },
+    {
+        "title": "Eagle Strafing Run (level 2)",
+        "keys": "⬆️➡️➡️"
+    },
+    {
+        "title": "Eagle Airstrike (level 2)",
+        "keys": "⬆️➡️⬇️➡️"
+    },
+    {
+        "title": "Eagle Cluster Bomb (level 3)",
+        "keys": "⬆️➡️⬇️⬇️➡️"
+    },
+    {
+        "title": "Eagle Napalm Airstrike (level 5)",
+        "keys": "⬆️➡️⬇️⬆️"
+    },
+    {
+        "title": "Jump Pack (level 8)",
+        "keys": "⬇️⬆️⬆️⬇️⬆️"
+    },
+    {
+        "title": "Eagle Smoke Strike (level 8)",
+        "keys": "⬆️➡️⬆️⬇️"
+    },
+    {
+        "title": "Eagle 110MM Rocket Pods (level 10)",
+        "keys": "⬆️➡️⬆️⬅️"
+    },
+    {
+        "title": "Eagle 500KG Bomb (level 15)",
+        "keys": "⬆️➡️⬇️⬇️⬇️"
+    },
+    {
+        "title": "Orbital Precision Strike (level 1)",
+        "keys": "➡️➡️⬆️"
+    },
+    {
+        "title": "Orbital Gas Strike (level 3)",
+        "keys": "➡️➡️⬇️➡️"
+    },
+    {
+        "title": "Orbital EMS Strike (level 5)",
+        "keys": "➡️➡️⬅️⬇️"
+    },
+    {
+        "title": "Orbital Smoke Strike (level 8)",
+        "keys": "➡️➡️⬇️⬆️"
+    },
+    {
+        "title": "HMG Emplacement (level 10)",
+        "keys": "⬇️⬆️⬅️➡️➡️⬅️"
+    },
+    {
+        "title": "Shield Generation Relay (level 10)",
+        "keys": "⬇️⬆️⬅️⬇️➡️➡️"
+    },
+    {
+        "title": "Tesla Tower (15)",
+        "keys": "⬇️⬆️➡️⬆️⬅️➡️"
+    },
+    {
+        "title": "Anti-Personnel Minefield (level 2)",
+        "keys": "⬇️⬅️⬆️➡️"
+    },
+    {
+        "title": "Supply Pack (level 3)",
+        "keys": "⬇️⬅️⬇️⬆️⬆️⬇️"
+    },
+    {
+        "title": "Grenade Launcher (level 5)",
+        "keys": "⬇️⬅️⬆️⬅️⬇️"
+    },
+    {
+        "title": "Laser Cannon (level 5)",
+        "keys": "⬇️⬅️⬇️⬆️⬅️"
+    },
+    {
+        "title": "Incendiary Mines (level 8)",
+        "keys": "⬇️⬅️⬅️⬇️"
+    },
+    {
+        "title": "\"Guard Dog\" Rover (level 10)",
+        "keys": "⬇️⬆️⬅️⬆️➡️➡️"
+    },
+    {
+        "title": "Ballistic Shield Backpack (level 12)",
+        "keys": "⬇️⬅️⬆️⬆️➡️"
+    },
+    {
+        "title": "Arc Thrower (level 15)",
+        "keys": "⬇️➡️⬆️⬅️⬇️"
+    },
+    {
+        "title": "Quasar Cannon (level 18)",
+        "keys": "⬇️⬆️⬅️➡️⬅️➡️"
+    },
+    {
+        "title": "Shield Generator Pack (level 20)",
+        "keys": "⬇️⬆️⬅️➡️⬅️➡️"
+    },
+    {
+        "title": "Machine Gun Sentry (level 3)",
+        "keys": "⬇️⬆️➡️➡️⬆️"
+    },
+    {
+        "title": "Gatling Sentry (level 5)",
+        "keys": "⬇️⬆️➡️⬅️"
+    },
+    {
+        "title": "Mortar Sentry (level 8)",
+        "keys": "⬇️⬆️➡️➡️⬇️"
+    },
+    {
+        "title": "\"Guard Dog\" (level 10)",
+        "keys": "⬇️⬆️⬅️⬆️➡️⬇️"
+    },
+    {
+        "title": "Autocannon Sentry (level 13)",
+        "keys": "⬇️⬆️➡️⬆️⬅️⬆️"
+    },
+    {
+        "title": "Rocket Sentry (level 15)",
+        "keys": "⬇️⬆️➡️➡️⬅️"
+    },
+    {
+        "title": "EMS Mortar Sentry (level 20)",
+        "keys": "⬇️⬇️⬆️⬆️⬅️"
+    },
+    {
+        "title": "Patriot Exosuit (level 25)",
+        "keys": "⬅️⬇️➡️⬆️⬅️⬇️⬇️"
+    }
+]
