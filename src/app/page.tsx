@@ -8,6 +8,8 @@ export default function Home() {
   const [foundStrategem, setFoundStrategem] = useState("");
   const [inputTimeout, setInputTimeout] = useState<any>();
   const [foundTimeout, setFoundTimeout] = useState<any>();
+  const [found, setFound] = useState<string[]>([""]);
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     document.addEventListener("keydown", keyDownHandler, false);
@@ -19,6 +21,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
+      {score > 0 && <div className="score">{score}</div>}
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         -- 💥 Strategem Zero 💀 --
       </h1>
@@ -92,6 +95,11 @@ export default function Home() {
           document
             .getElementById("lastStrategemDisplay")
             ?.classList.add("score");
+          if (found.indexOf(strategem.title) === -1) {
+            setScore(score + 1);
+          }
+
+          setFound(found.concat(strategem.title));
         }, 1);
 
         clearTimeout(foundTimeout);
