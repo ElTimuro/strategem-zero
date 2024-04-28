@@ -75,6 +75,7 @@ export default function Home() {
       }, 1500)
     );
 
+    // todo dont trigger is more is possible and wait for timeout (currently 2 strategems blocked)
     // todo clear if nothing can fit anymore
   }
 
