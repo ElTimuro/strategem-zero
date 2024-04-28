@@ -33,9 +33,7 @@ export default function Home() {
         </span>{" "}
         Strategem Hero Alternative.
       </h2>
-      <p className="text-lg" className="mt-12">
-        Presss [W] [A] [S] [D] to play.
-      </p>
+      <p className="text-lg mt-12">Presss [W] [A] [S] [D] to play.</p>
 
       <div id="lastStrategemDisplay" className="h-24 mt-12">
         {foundStrategem}
