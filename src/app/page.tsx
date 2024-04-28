@@ -21,8 +21,8 @@ export default function Home() {
   });
 
   return (
-    <PlausibleProvider domain="https://strategen-zero.vercel.app/">
-      <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center p-24">
+      <PlausibleProvider domain="https://strategen-zero.vercel.app/">
         {score > 0 && <div className="score">{score}</div>}
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           -- 💥 Strategem Zero 💀 --
@@ -42,8 +42,8 @@ export default function Home() {
         </div>
 
         <div className="text-8xl mt-12">{pressedArrows}</div>
-      </main>
-    </PlausibleProvider>
+      </PlausibleProvider>
+    </main>
   );
 
   function keyDownHandler(e: KeyboardEvent) {
