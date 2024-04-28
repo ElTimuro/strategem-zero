@@ -22,7 +22,7 @@ export default function Home() {
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         -- 💥 Strategem Zero 💀 --
       </h1>
-      <h2>
+      <h2 className="text-lg">
         The
         <span className="text-yellow-600 dark:text-yellow-500">
           {" "}
@@ -30,14 +30,15 @@ export default function Home() {
         </span>{" "}
         Strategem Hero Alternative.
       </h2>
+      <p className="text-lg" className="mt-12">
+        Presss [W] [A] [S] [D] to play.
+      </p>
 
       <div id="lastStrategemDisplay" className="h-24 mt-12">
         {foundStrategem}
       </div>
 
-      <div className="block w-full h-20 mt-12 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-5xl dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
-        {pressedArrows}
-      </div>
+      <div className="text-8xl mt-12">{pressedArrows}</div>
     </main>
   );
 
