@@ -65,6 +65,8 @@ export default function Home() {
         break;
 
       default:
+        // unessesary, but good to be explicit, since this clears the input
+        updatedPressedArrows = "";
         break;
     }
 
