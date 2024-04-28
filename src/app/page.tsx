@@ -1,16 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const strategems = [
-  { title: "Eagle 500KG Bomb", keys: "⬆️➡️⬇️⬇️⬇️" },
-  { title: "Resupply", keys: "⬇️⬇️⬆️➡️" },
-];
+import strategems from "../../public/strategems.json";
 
 export default function Home() {
   const [pressedArrows, setPressedArrows] = useState("");
   const [foundStrategem, setFoundStrategem] = useState("");
-  const [resetTimout, setrResetTimout] = useState(null);
+  const [inputTimeout, setInputTimeout] = useState(null);
+  const [foundTimeout, setFoundTimeout] = useState(null);
 
   useEffect(() => {
     document.addEventListener("keydown", keyDownHandler, false);
@@ -72,8 +69,8 @@ export default function Home() {
     setPressedArrows(updatedPressedArrows);
     checkForStrategem(updatedPressedArrows);
 
-    clearTimeout(resetTimout);
-    setrResetTimout(
+    clearTimeout(inputTimeout);
+    setInputTimeout(
       setTimeout(() => {
         setPressedArrows("");
       }, 1500)
@@ -85,18 +82,32 @@ export default function Home() {
   function checkForStrategem(input: string) {
     strategems.every((strategem) => {
       if (strategem.keys === input) {
+        setFoundStrategem("");
+        document
+          .getElementById("lastStrategemDisplay")
+          ?.classList.remove("score");
         setFoundStrategem(strategem.title);
-        document.getElementById("lastStrategemDisplay")?.classList.add("score");
         setTimeout(() => {
           document
             .getElementById("lastStrategemDisplay")
-            ?.classList.remove("score");
-          setFoundStrategem("");
-        }, 2000);
+            ?.classList.add("score");
+        }, 1);
+
+        clearTimeout(foundTimeout);
+        setFoundTimeout(
+          setTimeout(() => {
+            setFoundStrategem("");
+            document
+              .getElementById("lastStrategemDisplay")
+              ?.classList.remove("score");
+          }, 2000)
+        );
+
         setPressedArrows("");
-        clearTimeout(resetTimout);
         return false;
       } else {
+        // 16 since emojis count 2
+        if (input.length === 16) setPressedArrows("");
         return true;
       }
     });
