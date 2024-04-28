@@ -1,3 +1,7 @@
+<p align="center">
+   <a href="https://github.com/ElTimuro/strategen-zero"><img src="https://img.shields.io/github/stars/ElTimuro/strategen-zero" alt="Github Stars"></a>
+</p>
+
 # Strategem Zero
 
 This is a simplified version of the Helldiver 2 Strategem Hero minigame found on the superdetroyer if you purchase the Super Citizen Edition.
