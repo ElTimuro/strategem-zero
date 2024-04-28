@@ -89,6 +89,7 @@ export default function Home() {
   function checkForStrategem(input: string) {
     strategems.every((strategem) => {
       if (strategem.keys === input) {
+        plausible("foundStrategem");
         setFoundStrategem("");
         document
           .getElementById("lastStrategemDisplay")
