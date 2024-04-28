@@ -6,8 +6,8 @@ import strategems from "../../public/strategems.json";
 export default function Home() {
   const [pressedArrows, setPressedArrows] = useState("");
   const [foundStrategem, setFoundStrategem] = useState("");
-  const [inputTimeout, setInputTimeout] = useState(null);
-  const [foundTimeout, setFoundTimeout] = useState(null);
+  const [inputTimeout, setInputTimeout] = useState<any>();
+  const [foundTimeout, setFoundTimeout] = useState<any>();
 
   useEffect(() => {
     document.addEventListener("keydown", keyDownHandler, false);
@@ -68,8 +68,7 @@ export default function Home() {
 
     setPressedArrows(updatedPressedArrows);
     checkForStrategem(updatedPressedArrows);
-
-    clearTimeout(inputTimeout);
+    if (inputTimeout !== null) clearTimeout(inputTimeout);
     setInputTimeout(
       setTimeout(() => {
         setPressedArrows("");
