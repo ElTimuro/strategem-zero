@@ -29,7 +29,7 @@
     },
     {
         "title": "Hellbomb",
-        "keys": "⬆️⬇️⬅️⬇️⬆️➡️⬇️⬆️"
+        "keys": "⬆️⬇️⬅️⬇️⬆️➡️⬇️"
     },
     {
         "title": "Seismic Probe",
@@ -37,7 +37,7 @@
     },
     {
         "title": "Prospecting Drill",
-        "keys": "⬇️⬇️⬅️➡️⬇️⬇️"
+        "keys": "⬇️⬇️⬅️➡️⬇️"
     },
     {
         "title": "Super Earth Flag",
@@ -45,7 +45,7 @@
     },
     {
         "title": "Machine Gun (level 1)",
-        "keys": "⬇️⬅️⬇️⬆️➡️"
+        "keys": "⬇️⬅️⬇️⬆️"
     },
     {
         "title": "Anti-Material Rifle (level 2)",
@@ -209,7 +209,7 @@
     },
     {
         "title": "Shield Generator Pack (level 20)",
-        "keys": "⬇️⬆️⬅️➡️⬅️➡️"
+        "keys": "⬇️⬆️⬅️⬇️➡️➡️"
     },
     {
         "title": "Machine Gun Sentry (level 3)",
