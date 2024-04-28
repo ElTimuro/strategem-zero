@@ -25,7 +25,7 @@ While is this free, consider spending a few bucks to get yourself some Super Cre
 - Hosted on Vercel
 
 ## Upcoming
-- Rounds with a list to compelte for points
+- Rounds with a list to complete for points
 
 ## Know Issues
 
