@@ -5,6 +5,7 @@ import PlausibleProvider from "next-plausible";
 import strategems from "../../public/strategems.json";
 
 export default function Home() {
+  const plausible = usePlausible();
   const [pressedArrows, setPressedArrows] = useState("");
   const [foundStrategem, setFoundStrategem] = useState("");
   const [inputTimeout, setInputTimeout] = useState<any>();
