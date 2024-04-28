@@ -13,3 +13,9 @@ Feel free to PR, no promises, that I find the the to merge, though.
 ## Support
 
 While is this free, consider spending a few bucks to get yourself some Super Credits to support this awesome game.
+
+## Tech
+
+- NextJS
+- Tailwind
+- Hosted on Vercel
