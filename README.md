@@ -24,6 +24,9 @@ While is this free, consider spending a few bucks to get yourself some Super Cre
 - Tailwind
 - Hosted on Vercel
 
+## Upcoming
+- Rounds with a list to compelte for points
+
 ## Know Issues
 
 It is currently not possible to acccess all strategems, since some require the same base input, cutting of the longer ones.
