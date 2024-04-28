@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import PlausibleProvider from "next-plausible";
 import strategems from "../../public/strategems.json";
 
 export default function Home() {
@@ -20,27 +21,29 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      {score > 0 && <div className="score">{score}</div>}
-      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        -- 💥 Strategem Zero 💀 --
-      </h1>
-      <h2 className="text-lg">
-        The
-        <span className="text-yellow-600 dark:text-yellow-500">
-          {" "}
-          Open Source
-        </span>{" "}
-        Strategem Hero Alternative.
-      </h2>
-      <p className="text-lg mt-12">Presss [W] [A] [S] [D] to play.</p>
+    <PlausibleProvider domain="https://strategen-zero.vercel.app/">
+      <main className="flex min-h-screen flex-col items-center p-24">
+        {score > 0 && <div className="score">{score}</div>}
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          -- 💥 Strategem Zero 💀 --
+        </h1>
+        <h2 className="text-lg">
+          The
+          <span className="text-yellow-600 dark:text-yellow-500">
+            {" "}
+            Open Source
+          </span>{" "}
+          Strategem Hero Alternative.
+        </h2>
+        <p className="text-lg mt-12">Presss [W] [A] [S] [D] to play.</p>
 
-      <div id="lastStrategemDisplay" className="h-24 mt-12">
-        {foundStrategem}
-      </div>
+        <div id="lastStrategemDisplay" className="h-24 mt-12">
+          {foundStrategem}
+        </div>
 
-      <div className="text-8xl mt-12">{pressedArrows}</div>
-    </main>
+        <div className="text-8xl mt-12">{pressedArrows}</div>
+      </main>
+    </PlausibleProvider>
   );
 
   function keyDownHandler(e: KeyboardEvent) {
