@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <PlausibleProvider domain="strategen-zero.vercel.app">
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
