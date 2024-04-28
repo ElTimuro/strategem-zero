@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import PlausibleProvider from "next-plausible";
 import { usePlausible } from "next-plausible";
 import strategems from "../../public/strategems.json";
 
@@ -36,6 +35,12 @@ export default function Home() {
         </span>{" "}
         Strategem Hero Alternative.
       </h2>
+      <a className="mt-4" href="https://github.com/ElTimuro/strategen-zero">
+        <img
+          src="https://img.shields.io/github/stars/ElTimuro/strategen-zero"
+          alt="Github Stars"
+        />
+      </a>
       <p className="text-lg mt-12">Presss [W] [A] [S] [D] to play.</p>
 
       <div id="lastStrategemDisplay" className="h-24 mt-12">
