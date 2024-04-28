@@ -43,7 +43,7 @@ export default function Home() {
 
   function keyDownHandler(e: KeyboardEvent) {
     e.preventDefault();
-    var updatedPressedArrows;
+    let updatedPressedArrows = "";
 
     switch (e.key) {
       case "w":
