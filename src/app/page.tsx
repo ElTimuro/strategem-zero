@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import PlausibleProvider from "next-plausible";
+import { usePlausible } from "next-plausible";
 import strategems from "../../public/strategems.json";
 
 export default function Home() {
