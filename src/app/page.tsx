@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <PlausibleProvider domain="https://strategen-zero.vercel.app/">
+      <PlausibleProvider domain="strategen-zero.vercel.app/">
         {score > 0 && <div className="score">{score}</div>}
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           -- 💥 Strategem Zero 💀 --
