@@ -33,7 +33,7 @@ body {
 }
 
 .score {
-  font-size: 72px;
+  font-size: 48px;
   color: #ffcc00;
   font-weight: bold;
   animation: pop 0.5s ease-in-out;
