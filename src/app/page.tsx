@@ -73,8 +73,6 @@ export default function Home() {
         break;
 
       default:
-        // unessesary, but good to be explicit, since this clears the input
-        updatedPressedArrows = "";
         break;
     }
 
@@ -94,40 +92,46 @@ export default function Home() {
   function checkForStrategem(input: string) {
     strategems.every((strategem) => {
       if (strategem.keys === input) {
-        plausible("foundStrategem");
-        setFoundStrategem("");
+        setFound(found.concat(strategem.title));
+        setDisplayedStrategem(strategem.title);
+
+        if (found.indexOf(strategem.title) === -1) setScore(score + 1);
+
+        clearDisplayedStrategem();
+        clearInput();
+        return false;
+      }
+
+      // 16 since emojis count 2
+      if (input.length === 16) setPressedArrows("");
+      return true;
+    });
+  }
+
+  function clearInput() {
+    setPressedArrows("");
+  }
+
+  function setDisplayedStrategem(title: string) {
+    const display = document.getElementById("lastStrategemDisplay");
+
+    setFoundStrategem("");
+    display?.classList.remove("score");
+    setFoundStrategem(title);
+    setTimeout(() => {
+      display?.classList.add("score");
+    }, 1);
+  }
+
+  function clearDisplayedStrategem() {
+    clearTimeout(foundTimeout);
+    setFoundTimeout(
+      setTimeout(() => {
+        setDisplayedStrategem("");
         document
           .getElementById("lastStrategemDisplay")
           ?.classList.remove("score");
-        setFoundStrategem(strategem.title);
-        setTimeout(() => {
-          document
-            .getElementById("lastStrategemDisplay")
-            ?.classList.add("score");
-          if (found.indexOf(strategem.title) === -1) {
-            setScore(score + 1);
-          }
-
-          setFound(found.concat(strategem.title));
-        }, 1);
-
-        clearTimeout(foundTimeout);
-        setFoundTimeout(
-          setTimeout(() => {
-            setFoundStrategem("");
-            document
-              .getElementById("lastStrategemDisplay")
-              ?.classList.remove("score");
-          }, 2000)
-        );
-
-        setPressedArrows("");
-        return false;
-      } else {
-        // 16 since emojis count 2
-        if (input.length === 16) setPressedArrows("");
-        return true;
-      }
-    });
+      }, 2000)
+    );
   }
 }
