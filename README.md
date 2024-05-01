@@ -25,8 +25,8 @@ While is this free, consider spending a few bucks to get yourself some Super Cre
 - Hosted on Vercel
 
 ## Upcoming
-- Rounds with a list to complete for points
 - Training Mode for practicing your build
+- More details for each round
 
 ## Know Issues
 
