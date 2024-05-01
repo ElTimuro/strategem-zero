@@ -26,6 +26,7 @@ While is this free, consider spending a few bucks to get yourself some Super Cre
 
 ## Upcoming
 - Rounds with a list to complete for points
+- Training Mode for practicing your build
 
 ## Know Issues
 
