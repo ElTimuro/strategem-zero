@@ -55,17 +55,17 @@ export default function Home() {
           Round: {roundNr}
         </div>
       )}
-      {roundNr > 0 > 0 && (
+      {roundNr > 0 && (
         <div id="score" className="score">
           Score: {score}
         </div>
       )}
-      {roundNr > 0 > 0 && (
+      {roundNr > 0 && (
         <div id="score" className="score">
           Time: {roundTime}
         </div>
       )}
-      {roundNr > 0 > 0 && (
+      {roundNr > 0 && (
         <div id="score" className="text-5xl mt-12 flex flex-col items-center">
           <div className="p-2"> {roundGoals[0]?.title}</div>
           <div className="p-2">{roundGoals[0]?.keys}</div>
@@ -195,7 +195,7 @@ export default function Home() {
     // todo time bonus
     const scoreElement = document.getElementById("score");
     scoreElement?.classList.remove("score");
-    setScore(score + strategem.keys.length * 4);
+    setScore(score + strategem.keys.length * roundNr);
 
     setTimeout(() => {
       scoreElement?.classList.add("score");
