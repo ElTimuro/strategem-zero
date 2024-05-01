@@ -23,7 +23,11 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      {score > 0 && <div className="score">{score}</div>}
+      {score > 0 && (
+        <div id="score" className="score">
+          {score}
+        </div>
+      )}
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         -- 💥 Strategem Zero 💀 --
       </h1>
@@ -92,10 +96,8 @@ export default function Home() {
   function checkForStrategem(input: string) {
     strategems.every((strategem) => {
       if (strategem.keys === input) {
-        setFound(found.concat(strategem.title));
         setDisplayedStrategem(strategem.title);
-
-        if (found.indexOf(strategem.title) === -1) setScore(score + 1);
+        checkScore(strategem);
 
         clearDisplayedStrategem();
         clearInput();
@@ -103,9 +105,20 @@ export default function Home() {
       }
 
       // 16 since emojis count 2
-      if (input.length === 16) setPressedArrows("");
+      if (input.length === 16) clearInput();
       return true;
     });
+  }
+
+  function checkScore(strategem: { title: string; keys: string }) {
+    const scoreElement = document.getElementById("score");
+    scoreElement?.classList.remove("score");
+    if (found.indexOf(strategem.title) === -1)
+      setScore(score + strategem.keys.length * 2);
+
+    setTimeout(() => {
+      scoreElement?.classList.add("score");
+    }, 1);
   }
 
   function clearInput() {
