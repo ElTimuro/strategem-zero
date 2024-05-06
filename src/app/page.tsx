@@ -95,7 +95,6 @@ export default function Home() {
 
     switch (e.key) {
       case "w":
-        setDisplayedStrategem("lorem");
         updatedPressedArrows = pressedArrows + "⬆️";
         break;
 
