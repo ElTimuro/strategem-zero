@@ -29,9 +29,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
-      <a className="mt-4" href="https://github.com/ElTimuro/strategen-zero">
+      <a className="mt-4" href="https://github.com/ElTimuro/strategem-zero">
         <img
-          src="https://img.shields.io/github/stars/ElTimuro/strategen-zero"
+          src="https://img.shields.io/github/stars/ElTimuro/strategem-zero"
           alt="Github Stars"
         />
       </a>

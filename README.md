@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/ElTimuro/strategen-zero"><img src="https://img.shields.io/github/stars/ElTimuro/strategen-zero" alt="Github Stars"></a>
+   <a href="https://github.com/ElTimuro/strategem-zero"><img src="https://img.shields.io/github/stars/ElTimuro/strategem-zero" alt="Github Stars"></a>
 </p>
 
 # Strategem Zero
@@ -8,7 +8,7 @@ This is a simplified version of the Helldiver 2 Strategem Hero minigame found on
 
 This is fund side-project, feel free to use as you please.
 
-> 🕹️ You can play this at: https://strategen-zero.vercel.app
+> 🕹️ You can play this at: https://strategem-zero.vercel.app
 
 ## Contributing
 
@@ -25,6 +25,7 @@ While is this free, consider spending a few bucks to get yourself some Super Cre
 - Hosted on Vercel
 
 ## Upcoming
+
 - Training Mode for practicing your build
 - More details for each round
 
