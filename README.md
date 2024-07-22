@@ -4,7 +4,7 @@
 
 # Strategem Zero
 
-This is a simplified version of the Helldiver 2 Strategem Hero minigame found on the superdetroyer if you purchase the Super Citizen Edition.
+This is a simplified version of the Helldiver 2 Strategem Hero minigame found on the superdestroyer if you purchase the Super Citizen Edition.
 
 This is fund side-project, feel free to use as you please.
 
